@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# Written by Jmaul
+# Written by Joshthehero91
 #  Importing the nessecary modules: 
 #   'datetime' for calculating yesterdays date.
 #   'requests' to make the httpd request for the URL.
