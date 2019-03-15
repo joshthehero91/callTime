@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# Written by Joshthehero91
+# Written by Jmaul
 #  Importing the nessecary modules: 
 #   'datetime' for calculating yesterdays date.
 #   'requests' to make the httpd request for the URL.
@@ -13,12 +13,42 @@ from bs4 import BeautifulSoup
 #  List of admin names. Following the format, additional names or alternate names can be added:
 #   Currently only lists 1st shift admins.
 #
-names = ["White", 
-"Orange", 
-"Blonde", 
-"Pink", 
-"Blue", 
-"Brown"]
+names = ["Maul", 
+"Murphy", 
+"Purkis", 
+"Young", 
+"Colley", 
+"Brown", 
+"Engler", 
+"Collard", 
+"Ruedger", 
+"Thelen", 
+"Chunko", 
+"Burk", 
+"Hollis", 
+"Arnold", 
+"Miller", 
+"Parks", 
+"Peterson", 
+"Canfield", 
+"Gorzen", 
+"Savoie", 
+"Sucher", 
+"Fuller", 
+"Dumond", 
+"Benschoter", 
+"Kulpa", 
+"Ledyard", 
+"Mayers", 
+"Gray", 
+"Buehler", 
+"Cope", 
+"Adams", 
+"Anderson", 
+"Bixby", 
+"Smith", 
+"Kelley", 
+"Dilernia"]
 
 #
 #  Calculating yesterdays date:
@@ -34,7 +64,7 @@ yesterday=str(yesterday.strftime('%Y-%m-%d'))
 #   BeautifulSoup is doing the bulk of the work here: https://www.crummy.com/software/BeautifulSoup/bs4/doc/#
 #   Relaces '\n' with ' ' so 'split' can do its thing.
 #
-url = "http://phones.int.company.com/phones/queuelogin.php?dstart=" + yesterday + "&qnum=1011"
+url = "http://phones.int.liquidweb.com/phones/queuelogin.php?dstart=" + yesterday + "&qnum=1011"
 html = requests.get(url)
 #
 #  Ensure HTTP response is 200 before proceeding:

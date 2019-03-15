@@ -1,11 +1,10 @@
 #!/usr/bin/python
-# Written by Joshthehero91
+# Written by Jmaul
 #  Importing the nessecary modules: 
 #   'datetime' for calculating yesterdays date.
 #   'requests' to make the httpd request for the URL.
 #   'bs4' has 'BeautifulSoup' which will be used to parse the HTML.
 #
-from datetime import date, timedelta
 import requests
 from bs4 import BeautifulSoup
 
@@ -23,7 +22,7 @@ date = input("Date to check? (YYYY-MM-DD format):" )
 #   BeautifulSoup is doing the bulk of the work here: https://www.crummy.com/software/BeautifulSoup/bs4/doc/#
 #   Relaces '\n' with ' ' so 'split' can do its thing.
 #
-url = "http://phones.int.company.com/phones/queuelogin.php?dstart=" + date + "&qnum=1011"
+url = "http://phones.int.liquidweb.com/phones/queuelogin.php?dstart=" + date + "&qnum=1011"
 html = requests.get(url)
 #
 #  Ensure HTTP response is 200 before proceeding:
